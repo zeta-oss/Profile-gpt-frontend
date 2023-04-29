@@ -53,9 +53,9 @@ function showdata() {
      if(ref_name.trim()=="" && position.trim()=="") {
         document.querySelector("#result").innerHTML="Please enter the position looking for";
      } else if(ref_name.trim()=="") {
-     document.querySelector("#result").setAttribute("src",`http://localhost:8082/search-cand/${position.trim()}`);
+     document.querySelector("#result").setAttribute("src",`https://shortlist-profile-gpt.onrender.com/search-cand/${position.trim()}`);
      } else {
-        document.querySelector("#result").setAttribute("src",`http://localhost:8082/referal-cand/${position.trim()}/${ref_name.trim()}`);
+        document.querySelector("#result").setAttribute("src",`https://shortlist-profile-gpt.onrender.com/referal-cand/${position.trim()}/${ref_name.trim()}`);
      }
     // document.querySelector("#summ").setAttribute("src",`http://localhost:8081/blogsummary?topic=${topic}`);
     
